@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <style type="text/css" media="screen">
+ 	
+  /*Background gradient*/
+    /*.multiple-backgrounds {
+      height: 100px;
+      background: -webkit-linear-gradient(left top, #5aaddd , #eb4947);
+      background: -o-linear-gradient(bottom right, #5aaddd, #eb4947);
+      background: -moz-linear-gradient(bottom right, #5aaddd, #eb4947);
+      background: -ms-linear-gradient(to bottom right, #5aaddd , #eb4947);
+    }*/
+    /*Multiple backgrounds*/
+    /*.multiple-backgrounds {
+      width: 100%;
+      height: 200px;
+      background-image: url(https://mdn.mozillademos.org/files/11305/firefox.png), url(https://mdn.mozillademos.org/files/11307/bubbles.png), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: bottom right, left, right;
+      background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), -ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    }*/
+    /*Empty*/
+    /*p {
+      background: #5aaddd;
+      padding: 10px;
+      color: #fff;
+    }
+
+    p:empty {
+      display: none;
+    }*/
+    /*Resize
+Đây là thuộc tính có lẽ khá ít người biết đến và sử dụng nó. Thuộc tính resize định dạng cho block mà người dùng có thể thay đổi được kích thước theo ý muốn.*/
+    p {
+      background: #5aaddd;
+      padding: 10px;
+      color: #fff;
+      resize: both;
+      border: 1px solid #000;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="multiple-backgrounds">
+    <!-- Empty -->
+    <!-- <p></p>
+    <p>This block has content</p> -->
+    <!-- End Empty -->
+    <!-- Resize -->
+    <p>
+      This block can resize
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <!-- End Resize -->
+  </div>
+
+  
+  <script type="text/javascript">
+  	
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+	background: green;
+}
+
+.content {
+	background: pink;
+	width: 1000px;
+}
+
+.content-1 {
+	border: 1px solid red;
+	height: 500px;
+	width: 498px;
+	float: left;
+}
+
+.content-2 {
+	border: 1px solid #000000;
+	height: 500px;
+	width: 498px;
+	float: right;
+}
+
+.clr {
+	clear: both;
+}
+@media only screen and (max-width: 600px)
+{
+	body {
+		border: 1px solid #ffffff;
+		background: blue;
+	}
+	.content-1 {
+		background: #dddddd;
+		width: 550px;
+		float: left;
+	}
+	.content-2 {
+		background: red;
+		width: 550px;
+		float: left;
+	}
+}
