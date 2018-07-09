@@ -8,22 +8,20 @@ body {
 }
 
 .content-1 {
-	border: 1px solid red;
+	background: red;
 	height: 500px;
 	width: 498px;
+	margin-right: 2px;
 	float: left;
 }
 
 .content-2 {
-	border: 1px solid #000000;
+	background: yellow;
 	height: 500px;
-	width: 498px;
-	float: right;
+	width: 490px;
+	float: left;
 }
 
-.clr {
-	clear: both;
-}
 @media only screen and (max-width: 600px)
 {
 	body {
@@ -31,13 +29,9 @@ body {
 		background: blue;
 	}
 	.content-1 {
-		background: #dddddd;
-		width: 550px;
-		float: left;
+		background: #000000;
 	}
 	.content-2 {
-		background: red;
-		width: 550px;
-		float: left;
+		background: #ffffff;
 	}
 }
