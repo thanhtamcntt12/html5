@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List Departments</title>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/listdepartment.js"></script>
+  <script src="js/adddepartment.js"></script>
+  <script src="js/editdepartment.js"></script>
+</head>
+<body>
+  <div id="define">
+    <div id="header">
+      <div id="img">
+        <div class="img1">
+          <img src="image/logo.gif" alt="">
+        </div>
+        <div class="img2">
+          <img src="image/logo2.gif" class="img2" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="menu">
+      <ul>
+        <li><a href="#">List Departments</a></li>
+        <li><a href="#">List Facilities</a></li>
+      </ul>
+      <!-- <p class="pull-right test">agent1</p> -->
+      <div class="dropdown pull-right">
+        <a class="test1" data-toggle="dropdown">agent1
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="table">
+      <!-- <button class="button2">Add</button> -->
+      <button type="button" class="pull-right button2" data-toggle="modal" data-target="#add-department">Add</button>
+      <div class="title1">
+        <table class="table table-bordered table-hover">
+          <colgroup>
+              <col width="10%">
+              <col width="10%">
+              <col width="5%">
+              <col width="5%">
+              <col width="15%">
+              <col width="10%">
+              <col width="20%">
+              <col width="15%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>created_userid</th>
+              <th>updated_userid</th>
+              <th>facility_id</th>
+              <th>department_name</th>
+              <th>phone</th>
+              <th>url</th>
+              <th>memo</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="department">
+          </tbody>
+        </table>
+      </div>
+      <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+    </div>
+    <!-- add-department -->
+
+    <div id="add-department" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <h4 class="modal-title">Add Department</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">created_userid</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="created_userid" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">updated_userid</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="updated_userid" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">facility_id</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="facility_id" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">department_name</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="department_name" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">phone</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="phone" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">url</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="url" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">memo</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="memo" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button4" id="add-department" data-dismiss="modal">Add</button>
+            <button type="button" class="button3" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- edit-department -->
+
+    <div id="edit-department" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <!-- <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Edit Department</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">created_userid</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="created_userid" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">updated_userid</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="updated_userid" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">facility_id</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="facility_id" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">department_name</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="department_name" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">phone</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="phone" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">url</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="url" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row title8">
+              <div class="col-sm-12">
+                <div class="col-3 col-sm-4">
+                  <div class="title8">
+                    <p class="title9">memo</p>
+                  </div>
+                </div>
+                <div class="col-9 col-sm-8">
+                  <div class="title7">
+                    <input type="text" class="form-control" id="memo" value="" placeholder="Input field">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button4" id="add-department" data-dismiss="modal">Save</button>
+            <button type="button" class="button3" data-dismiss="modal">Close</button>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+
+    <!-- delete department -->
+    <div id="del-department" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
