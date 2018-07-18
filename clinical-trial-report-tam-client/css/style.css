@@ -1,0 +1,216 @@
+#header{
+  height: 80px;
+  background: #f2f2f2;
+}
+h3{
+  padding-left: 15px;
+  background: #11a051;
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-style: italic;
+  margin-top: 0px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 142px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.title{
+  height: 300px;
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button{
+  margin-left: 196px;
+  height: 32px;
+  line-height: 30px;
+  background: #527ba7;
+  color: #ffffff;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#define{
+  background: #121212;
+  height: 2000px;
+}
+
+#img{
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.img1{
+  float: left;
+  margin-top: 30px;
+}
+.img2{
+  height: 35px;
+  float: right;
+  margin-top: 15px;
+}
+
+body{
+  width: 99%;
+  height: 927px;
+}
+
+.login{
+  height: 340px;
+  width: 762px;
+  margin: auto;
+}
+
+.lb{
+  padding-top: 80px;
+}
+
+input[type="text"]:focus {
+  border:1px solid #87aa88;
+}
+
+input[type="password"]:focus {
+  border:1px solid #87aa88;
+}
+
+#menu{
+
+  width: 1170px;
+  margin: auto;
+  height: 40px;
+  line-height: 42px;
+  background: #109f50;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#menu ul{
+  margin-top: -10px;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+
+#menu li{
+  float: left;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+#menu a{
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+#menu ul li:hover{
+  background: #52b67f;
+  border-radius: 5px;
+}
+
+#table{
+  width: 1170px;
+  margin: auto;
+  background: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button1{
+  height: 35px;
+  margin-left: 15px;
+  background: #416a95;
+  color: #ffffff;
+  border: 0;
+}
+
+.button2{
+  float: right;
+  margin-top: 22px;
+  margin-bottom: 30px;
+  margin-right: 35px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #109f50;
+  border: 0;
+}
+.pagination{
+  margin-left: 500px;
+  margin-top: -3px;
+}
+
+.title1{
+  width: 1140px;
+  margin: auto;
+}
+
+.test{
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.test1{
+  margin-right: 20px;
+}
+
+.iput{
+  width: 370px;
+  height: 33px;
+  float: right;
+}
+
+.lbel{
+  padding-top: 5px;
+}
+
+.button3{
+  height: 40px;
+  background: #849eba;
+  color: #ffffff;
+  border: 0;
+  border-radius: 3px;
+}
+
+.button4{
+  height: 40px;
+  background: #f0ad4e;
+  border: 0;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+.title3{
+  border: 1px solid red;
+  float: right;
+  margin-right: 390px;
+  padding-top: 5px;
+}
+
+.title5{
+  border: 1px solid red;
+  float: right;
+  margin-top: -30px;
+  width: 350px;
+  margin-left: 20px;
+}
+
+.title7{
+  margin-right: -50px;
+  margin-bottom: 5px;
+}
+
+.title8{
+  margin-right: 20px;
+}
+
+.title9{
+  text-align: right;
+  color: #333333;
+  font-weight: bold;
+  padding-top: 8px;
+}

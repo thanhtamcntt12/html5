@@ -1,6 +1,3 @@
-body {
-	background: green;
-}
 
 .content {
 	background: pink;
@@ -8,20 +5,22 @@ body {
 }
 
 .content-1 {
-	background: red;
+	border: 1px solid red;
 	height: 500px;
 	width: 498px;
-	margin-right: 2px;
 	float: left;
 }
 
 .content-2 {
-	background: yellow;
+	border: 1px solid #000000;
 	height: 500px;
-	width: 490px;
-	float: left;
+	width: 498px;
+	float: right;
 }
 
+.clr {
+	clear: both;
+}
 @media only screen and (max-width: 600px)
 {
 	body {
@@ -29,9 +28,13 @@ body {
 		background: blue;
 	}
 	.content-1 {
-		background: #000000;
+		background: #dddddd;
+		width: 550px;
+		float: left;
 	}
 	.content-2 {
-		background: #ffffff;
+		background: red;
+		width: 550px;
+		float: left;
 	}
 }
