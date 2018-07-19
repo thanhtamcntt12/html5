@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>外線着信ログ</title>
+
+        <meta name="description" content="">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap3.3.7.min.css">
+        <script src="js/jquery3.3.1.min.js"></script>
+        <script src="js/bootstrap3.3.7.min.js"></script>
+        <script src="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css" />
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style2.css">
+    </head>
+    <body>
+        <!-- Left Panel -->
+        <aside id="left-panel" class="left-panel">
+            <nav class="left-head">
+                <span class="company-name">Cyber IP PBX</span>
+            </nav>
+            <nav class="menu-left">
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu1" aria-expanded="false">ダイヤルプラン</a>
+                <ul class="collapse  list-group sub-menu" role="menu" aria-labelledby="menu1" id="menu1" style="color: white">
+                    <li class="child"><a href=#>内線番号設定 </a></li>
+                    <li class="child"><a href=#>外線着信設定</a></li>
+                    <li class="child"><a href=#>外線発信設定</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu2" aria-expanded="false">電話機設定</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu2" id="menu2" style="color: white">
+                    <li class="child"><a href=#>電話機アカウント設定</a></li>
+                    <li class="child"><a href=#>グループ登録</a></li>
+                    <li class="child"><a href=#>グループ電話機管理</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu3" aria-expanded="false">回線設定</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu3" id="menu3" style="color: white">
+                    <li class="child"><a href=#>回線アカウント設定</a></li>
+                    <li class="child"><a href=#>サーバー登録設定</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu4" aria-expanded="false">外線着信特定日設定</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu4" id="menu4" style="color: white">
+                    <li class="child"><a href=#>特定日カテゴリー登録</a></li>
+                    <li class="child"><a href=#>特定日スケジュール設定</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu5" aria-expanded="false">外線着信特定発信者番号検出設定</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu5" id="menu5" style="color: white">
+                    <li class="child"><a href=#>特定発信者番号カテゴリー登録</a></li>
+                    <li class="child"><a href=#>特定発信者番号登録</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu6" aria-expanded="false">外線発信規制番号設定</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu6" id="menu6" style="color: white">
+                    <li class="child"><a href=#>発信規制番号カテゴリー登録</a></li>
+                    <li class="child"><a href=#>外線発信規制番号登録</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu7" aria-expanded="false">音声ファイル管理</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu7" id="menu7" style="color: white">
+                    <li class="child"><a href=#>音声ファイル管理</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu8" aria-expanded="false">ボイスメール</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu8" id="menu8" style="color: white">
+                    <li class="child"><a href=#>メールボックス管理</a></li>
+                    <li class="child"><a href=#>メッセージ一覧</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu9" aria-expanded="false">IVR設定</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu9" id="menu9" style="color: white">
+                    <li class="child"><a href=#>IVR設定</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu10" aria-expanded="false">コールセンター設定</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu10" id="menu10" style="color: white">
+                    <li class="child"><a href=#>エージェント管理 </a></li>
+                    <li class="child"><a href=#>エージェントグループ登録</a></li>
+                    <li class="child"><a href=#>エージェントグループメンバー登録</a></li>
+                    <li class="child"><a href=#>ACD設定</a></li>
+                </ul>
+
+                <a class="head-menu collapsed" data-toggle="collapse" data-target="#menu11" aria-expanded="false">コールログ</a>
+                <ul class="collapse list-group sub-menu" role="menu" aria-labelledby="menu11" id="menu11" style="color: white">
+                    <li class="child"><a href=#>内線ログ </a></li>
+                    <li class="child active"><a href=#>外線着信ログ</a></li>
+                    <li class="child"><a href=#>外線発信ログ</a></li>
+                </ul>
+
+                <a class="head-menu active" data-toggle="collapse" data-target="#menu12" aria-expanded="true">システム管理</a>
+                <ul class="collapse in list-group sub-menu" role="menu" aria-labelledby="menu12" id="menu12" style="color: white">
+                    <li class="child"><a href=#>テナント設定 </a></li>
+                    <li class="child"><a href=#>テナント管理者</a></li>
+                    <li class="child"><a href=#>SIPグローバル設定</a></li>
+                    <li class="child"><a href=#>ライセンス管理</a></li>
+                    <li class="child"><a href=#>エクスポート</a></li>
+                    <li class="child"><a href=#>Cyber-Smartシリーズについて</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- /#left-panel -->
+
+        <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <div class="right-head">
+            <span class="user">
+                <a href="#"><i class="fas fa-users"></i><span class="text-icon">Default</span> / <i class="fas fa-user-circle"></i><span class="text-icon">admin</span></a>
+            </span>
+            <span class="logout">
+               <a href=""><i class="fas fa-sign-out-alt"></i><span class="text-icon">ログアウト</span></a>
+            </span>
+        </div>
+        <div class="container-full">
+            <div class="row">
+                <div class="base-area">
+                    <div class="base-content">
+                        <h3>エクスポート</h3>
+                        <div id="grid" class="table extension-setting" style="width: 100%; height: 730px;"></div>
+                        <!-- Filter Bar -->
+                        <div  id="filter-content" class="filter-position">
+                            <div  class="filter-bar">
+                               <span class="filter-icon" data-toggle="collapse" data-target="#filter-base" aria-expanded="false">
+                               <i class="fas fa-filter"><img src="img/admin/icon/filter-plus.png" class="filter-plus" alt="plus-icon"></i>フィルターを追加</span>
+                               <span class="text-icon-filter" >フィルターが設定されていません</span>
+                               <span id="filter-hide" class="hide-filter"><i class="fas fa-times"></i></span>
+                            </div>
+                            <div id="filter-base" class="collapse" aria-expanded="false">
+                               <div class="filter-contariner">
+                                  <div class="close-filter-area">
+                                     フィルター
+                                     <i class="fas fa-times" id="close-filter"></i>
+                                  </div>
+                                  <form class="filter-form">
+                                     <label for="rule">一致</label>
+                                     <select name="rule">
+                                        <option value="">すべてのルール</option>
+                                     </select>
+                                     <label for="column">列</label>
+                                     <select name="column">
+                                        <option value="">いずれかの列</option>
+                                     </select>
+                                     <label for="include">条件</label>
+                                     <select name="include">
+                                        <option value="">含む</option>
+                                     </select>
+                                     <label for="value">値</label>
+                                     <input type="text" name="value" value="3">
+                                     <span class="notice">いずれかの列 含む 3</span>
+                                     <div class="filter-condition">
+                                        <span class="condition-rule"><a href="#">条件を追加</a></span>
+                                        <span class="condition-rule">または</span>
+                                        <span class="condition-rule"><a href="#">クリア</a></span>
+                                     </div>
+                                     <div class="button-area">
+                                        <button class="btn btn-filter btn-cancel">キャンセル</button>
+                                        <button class="btn btn-filter btn-dofilter"><i class="fas fa-filter"></i> フィルター</button>
+                                     </div>
+                                  </form>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <hr class="clear">
+                        <div class="count-result">
+                            <span class="num-count">
+                            <a href="#" class="active">25件</a>
+                            <a href="#">50件</a>
+                            <a href="#">100件</a>
+                            <a href="#">すべて</a>
+                            </span>
+                            <span class="paging-index">1/5</span>
+                            <span class="paging">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            </span>
+                        </div>
+                        <div class="action">
+                            <span class="action-link"><a href="#"><i class="fas fa-trash-alt"></i> 選択項目を削除</a></span>
+                            <span class="action-link"><a href="#" id="show-filter"><i class="fas fa-filter"></i> フィルターバーを表示</a></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="configuration-area" >
+                    <hr class="configuration-head">
+                    <div class="configuration-input">
+                          <ul class="setting-opt-head nav nav-pills">
+                            <li class="active"><a data-toggle="pill" href="#tab1" class="tab-name">設定</a></li>
+                          </ul>
+
+                        <div class="tab-content">
+                        <div id="tab1" class="tab-pane fade in active">
+                            <form class="configuration-form">
+                                <label for="start_date_and_time">開始日時</label>
+                                <select name="start_date_and_time" style="width: 49%">
+                                    <option value=""></option>
+                                </select>
+                                <select name="start_date_and_time" style="width: 49%; float: right;">
+                                    <option value=""></option>
+                                </select>
+                                <label for="end_date_and_time">終了日時</label>
+                                <select name="end_date_and_time" style="width: 49%">
+                                    <option value=""></option>
+                                </select>
+                                <select name="end_date_and_time" style="width: 49%; float: right;">
+                                    <option value=""></option>
+                                </select>
+                                <label for="caller_id">発信者番号</label>
+                                <input type="text" name="caller_id">
+                                <label for="external_incoming_number">外線着信番号</label>
+                                <input type="text" name="external_incoming_number">
+                                <label for="link_id">リンクID</label>
+                                <input type="text" name="link_id">
+                                <label for="Maximum_number_of_output_records">最大出⼒レコード数</label>
+                                <input type="number" name="Maximum_number_of_output_records">
+                            </form>
+                        </div>
+                        <div id="tab2" class="tab-pane fade">
+                          <p>data in tab 2</p>
+                        </div>
+                        <div id="tab3" class="tab-pane fade">
+                          <p>data in tab 3</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="configuration-button-position">
+                        <button class="btn btn-search"><i class="fa fa-search"></i><span class="text-icon">検索</span></button>
+                        <button class="btn btn-csv"><i class="fa fa-download"></i><span class="text-icon">CSV エクスポート</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /#right-panel -->
+        <!-- /#right-panel -->
+    </body>
+</html>
+<script src="js/main.js"></script>
+<script>
+$(function () {
+    $('#grid').w2grid({
+        name: 'grid',
+        columns: [
+            { field: 'id', caption: '<i class="fas fa-trash-alt"></i>', sortable: false },
+            { field: 'description', caption: '説明', sortable: true },
+            { field: 'extension_number', caption: '内線番号',  sortable: true },
+            { field: 'action', caption: 'アクション', sortable: true },
+            { field: 'data1', caption: 'データ1', sortable: true },
+            { field: 'data2', caption: 'データ2',  sortable: true },
+        ],
+        records: [
+                { recid: 1, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox1" checked><label for="ckbox1" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 2, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox2"><label for="ckbox2" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 3, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox3" checked><label for="ckbox3" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 4, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox4"><label for="ckbox4" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 5, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox5" checked><label for="ckbox5" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 6, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox6"><label for="ckbox6" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 7, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox7" checked><label for="ckbox7" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 8, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox8"><label for="ckbox8" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 9, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox9" checked><label for="ckbox9" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 10, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox10"><label for="ckbox10" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 11, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox11" checked><label for="ckbox11" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 12, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox12"><label for="ckbox12" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 13, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox13" checked><label for="ckbox13" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 14, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox14"><label for="ckbox14" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 15, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox15" checked><label for="ckbox15" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 16, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox16"><label for="ckbox16" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 17, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox17" checked><label for="ckbox17" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 18, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox18"><label for="ckbox18" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 19, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox19" checked><label for="ckbox19" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 20, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox20"><label for="ckbox20" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+
+                { recid: 21, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox21" checked><label for="ckbox21" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101BST101BSTS', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180' },
+
+                { recid: 22, id :  '<input type="checkbox" value="" class="ckbox_first" name="id[]" id="ckbox22"><label for="ckbox22" class="ckbox-custom"></label>', description: 'NAKAYO IP-24N-ST101B', extension_number: '2004', action: 'dial', data1: 'SIP/2004', data2 : '180'},
+        ],
+
+    });
+});
+
+</script>
