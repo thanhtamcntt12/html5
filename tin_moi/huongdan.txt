@@ -1,0 +1,11 @@
+
+=================== HƯỠNG DẪN =======================
+1: tải file về gieir nén ra.
+2: coppy vào thư mục htdocs của xampp
+3: tạo CSDL  trong phpmyadmin và import CSDL vào : file CSDL nằm ở database/tin.sql
+4: cấu hình CSDL,MAIL, ... trong FIle .env
+ĐĂNG NHẬP QUẢN TRỊ TẠI:
+ + tenwebcuaban/admin
+ + Tài khoản: admin@gmail.com
+ + Mật khẩu: 123456
+ ================== THANKS =====================
